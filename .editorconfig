@@ -1,0 +1,29 @@
+
+root = true
+
+[*]
+# Indentation
+indent_style = space
+indent_size = 4
+# Tab width
+tab_width = 4
+# Fin de ligne
+end_of_line = lf
+# Charset
+charset = utf-8
+# Ajouter une nouvelle ligne à la fin du fichier
+insert_final_newline = true
+# Limite de la longueur des lignes à 80 caractères
+max_line_length = 80
+# Pas de caractères d'espacement inutiles
+trim_trailing_whitespace = true
+
+[*.c]
+# Indentation spécifique aux fichiers .c
+indent_style = tab
+indent_size = 4
+
+[*.h]
+# Indentation spécifique aux fichiers d'en-tête .h
+indent_style = tab
+indent_size = 4
