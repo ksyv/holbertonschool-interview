@@ -2,6 +2,8 @@
 '''module for find the island perimeter'''
 
 def island_perimeter(grid):
+    '''calc the island perimeter'''
+    
     if grid is None or len(grid) == 0:
         return 0
     rows = len(grid)
