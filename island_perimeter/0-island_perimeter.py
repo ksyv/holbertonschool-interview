@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+'''module for find the island perimeter'''
 
 def island_perimeter(grid):
     if grid is None or len(grid) == 0:
