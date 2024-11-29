@@ -6,10 +6,6 @@ and each box may contain keys to the other boxes.'''
 
 
 def canUnlockAll(boxes):
-    openedBox = []
-    if (len(boxes) <= 0):
-        return False
-def canUnlockAll(boxes):
     if not boxes or len(boxes) == 0:
         return False
 
