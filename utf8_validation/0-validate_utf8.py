@@ -8,9 +8,9 @@ def validUTF8(data):
     while index < len(data):
         byte = data[index]
 
-        if (byte >> 10000000) == 1:
+        if (byte >> 7) == 1:
             one_counter = 0
-            while (byte >> (10000000 - one_counter)) == 1:
+            while (byte >> (7 - one_counter)) == 1:
                 one_counter += 1
 
             if one_counter > 4 or index + one_counter > len(data):
