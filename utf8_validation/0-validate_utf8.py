@@ -10,11 +10,8 @@ def validUTF8(data):
 
         if (byte >> 7) == 1:
             one_counter = 0
-            while (byte >> (7 - one_counter)) == 1:
+            while (byte >> (8 - one_counter)) == 0:
                 one_counter += 1
-
-            if one_counter == 1 or one_counter > 4:
-                return False
 
             if one_counter > 4 or index + one_counter > len(data):
                 return False
