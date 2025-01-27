@@ -13,6 +13,9 @@ def validUTF8(data):
             while (byte >> (7 - one_counter)) == 1:
                 one_counter += 1
 
+            if one_counter == 1 or one_counter > 4:
+                return False
+
             if one_counter > 4 or index + one_counter > len(data):
                 return False
 
