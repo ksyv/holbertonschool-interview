@@ -21,5 +21,7 @@ def validUTF8(data):
                 if (next_byte >> 6) != 2:
                     return False
 
+            index += one_counter
+
         index += 1
     return True
