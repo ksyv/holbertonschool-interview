@@ -9,6 +9,8 @@ def validUTF8(data):
         byte = data[index]
 
         if (byte >> 7) == 1:
+            if not ((byte >> 6) & 1 == 1):
+                return False
             one_counter = 0
             while (byte >> (7 - one_counter)) & 1 == 1:
                 one_counter += 1
