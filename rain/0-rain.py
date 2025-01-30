@@ -9,7 +9,7 @@ def rain(walls):
     Calcule la quantité d'eau de pluie retenue entre les murs.
 
     Args:
-        walls: Une liste d'entiers non négatifs représentant la hauteur des murs.
+        walls: liste d'entiers non négatifs représentant la hauteur des murs
 
     Returns:
         La quantité totale d'eau de pluie retenue.
