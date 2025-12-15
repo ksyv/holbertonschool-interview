@@ -19,7 +19,7 @@ int regex_match(char const *str, char const *pattern)
     if (*(pattern + 1) != '*')
     {
         if (*pattern == '.' || *pattern == *str)
-            return (*str && regex_match(str + 1, pattern + 1));
+            return (*str && regex_match(str + 1, pattern + 1)); 
         return (0);
     }
 
