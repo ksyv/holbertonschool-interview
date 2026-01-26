@@ -12,7 +12,7 @@ def count_words(subreddit, word_list, counts=None, after=None):
         for word in word_list:
             w = word.lower()
             counts[w] = counts.get(w, 0) + 1
-        
+
         # Initialize match tracker: {word: 0}
         # and store multiplier: {word: frequency_in_list}
         multiplier = {w: counts[w] for w in counts}
